@@ -21,5 +21,4 @@ List of Videos:
 - [ ] Lecture 15 : Conference Resolution
 - [ ] Lecture 16 : Dynamic Neural Networks for Question Answering 
 - [ ] Lecture 17 : Possible NLP Architectures
-- [ ] Lecture 11 : Tackling the limits of Deep Learning for NLP
 
