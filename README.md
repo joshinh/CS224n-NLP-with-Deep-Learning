@@ -9,8 +9,8 @@ List of Videos:
 - [x] Lecture 3 : GloVe - Global Vectors for Word Representations
 - [x] Lecture 4 : Word Window Classification and Neural Networks 
 - [x] Lecture 5 : Backpropogation 
-- [ ] Lecture 6 : Dependancy Parsing
-- [ ] Lecture 7 : Introduction to Tensorflow 
+- [x] Lecture 6 : Dependancy Parsing
+- [x] Lecture 7 : Introduction to Tensorflow 
 - [ ] Lecture 8 : Recurrent Neural Networks and Language Models
 - [ ] Lecture 9 : Machine Translation and Advanced Recurrent LSTMs and GRUs
 - [ ] Lecture 10 : Neural Machine Translation and Attention
