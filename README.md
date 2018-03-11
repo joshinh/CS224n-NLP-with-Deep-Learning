@@ -11,12 +11,12 @@ List of Videos:
 - [x] Lecture 5 : Backpropogation 
 - [x] Lecture 6 : Dependancy Parsing
 - [x] Lecture 7 : Introduction to Tensorflow 
-- [ ] Lecture 8 : Recurrent Neural Networks and Language Models
-- [ ] Lecture 9 : Machine Translation and Advanced Recurrent LSTMs and GRUs
-- [ ] Lecture 10 : Neural Machine Translation and Attention
-- [ ] Lecture 11 : Gated Recurrent Units 
-- [ ] Lecture 12 : End-to-end models for Speech Processing 
-- [ ] Lecture 13 : Convolutional Neural Networks
+- [x] Lecture 8 : Recurrent Neural Networks and Language Models
+- [x] Lecture 9 : Machine Translation and Advanced Recurrent LSTMs and GRUs
+- [x] Lecture 10 : Neural Machine Translation and Attention
+- [x] Lecture 11 : Gated Recurrent Units 
+- [x] Lecture 12 : End-to-end models for Speech Processing 
+- [x] Lecture 13 : Convolutional Neural Networks
 - [ ] Lecture 14 : Tree Recursive Neural Networks and Constituency Parsing
 - [ ] Lecture 15 : Conference Resolution
 - [ ] Lecture 16 : Dynamic Neural Networks for Question Answering 
