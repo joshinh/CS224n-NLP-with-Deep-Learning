@@ -2,6 +2,7 @@ import numpy as np
 import tensorflow as tf
 
 
+
 def xavier_weight_init():
     """Returns function that creates random tensor.
 
@@ -25,6 +26,9 @@ def xavier_weight_init():
             out: tf.Tensor of specified shape sampled from the Xavier distribution.
         """
         ### YOUR CODE HERE
+
+        epsilon = np.sqrt(6/sum(shape))
+        out = tf.Variable(tf.random_uniform(shape=shape,minval = -epsilon, maxval = epsilon, dtype = tf.float32))
         ### END YOUR CODE
         return out
     # Returns defined initializer function.
