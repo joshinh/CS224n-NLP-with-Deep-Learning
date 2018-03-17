@@ -115,8 +115,8 @@ class ParserModel(Model):
         """
         ### YOUR CODE HERE
 
-        embeddings = tf.Variable(self.pretrained_embeddings)
-        embeddings = tf.nn.embedding_lookup(embeddings,self.input_placeholder)
+        all_embeddings = tf.Variable(self.pretrained_embeddings)
+        embeddings = tf.nn.embedding_lookup(all_embeddings ,self.input_placeholder)
         embeddings = tf.reshape(embeddings,[-1,self.config.n_features * self.config.embed_size])
 
 
@@ -154,13 +154,13 @@ class ParserModel(Model):
         xavier_initializer = xavier_weight_init()
 
         with tf.variable_scope("compute"):
-            W = xavier_initializer([self.config.n_features * self.config.embed_size, self.config.hidden_size])
-            b1 = tf.Variable(tf.zeros([self.config.hidden_size], dtype = tf.float32))
-            U = xavier_initializer([self.config.hidden_size, self.config.n_classes])
-            b2 = tf.Variable(tf.zeros([self.config.n_classes], dtype = tf.float32))
+            W = tf.Variable(xavier_initializer([self.config.n_features * self.config.embed_size, self.config.hidden_size]))
+            b1 = tf.Variable(tf.random_uniform([self.config.hidden_size, ], dtype = tf.float32))
+            U = tf.Variable(xavier_initializer([self.config.hidden_size, self.config.n_classes]))
+            b2 = tf.Variable(tf.random_uniform([self.config.n_classes], dtype = tf.float32))
 
-            z1 = tf.matmul(x,W) + b1
-            h = tf.nn.relu(z1)
+            z = tf.matmul(x,W) + b1
+            h = tf.nn.relu(z)
             h_drop = tf.nn.dropout(h,self.dropout_placeholder)
             pred = tf.matmul(h_drop,U) + b2
 
@@ -182,7 +182,7 @@ class ParserModel(Model):
         """
         ### YOUR CODE HERE
 
-        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=self.labels_placeholder,logits=pred))
+        loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(labels=self.labels_placeholder, logits=pred))
         ### END YOUR CODE
         return loss
 

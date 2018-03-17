@@ -27,8 +27,8 @@ def xavier_weight_init():
         """
         ### YOUR CODE HERE
 
-        epsilon = np.sqrt(6/sum(shape))
-        out = tf.Variable(tf.random_uniform(shape=shape,minval = -epsilon, maxval = epsilon, dtype = tf.float32))
+        epsilon = np.sqrt(6/np.sum(shape))
+        out = tf.random_uniform(shape=shape,minval = -epsilon, maxval = epsilon, dtype = tf.float32)
         ### END YOUR CODE
         return out
     # Returns defined initializer function.
@@ -42,6 +42,7 @@ def test_initialization_basic():
     xavier_initializer = xavier_weight_init()
     shape = (1,)
     xavier_mat = xavier_initializer(shape)
+    print(xavier_mat)
     assert xavier_mat.get_shape() == shape
 
     shape = (1, 2, 3)
