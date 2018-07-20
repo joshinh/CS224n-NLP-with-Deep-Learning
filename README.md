@@ -18,7 +18,7 @@ List of Videos:
 - [x] Lecture 12 : End-to-end models for Speech Processing 
 - [x] Lecture 13 : Convolutional Neural Networks
 - [x] Lecture 14 : Tree Recursive Neural Networks and Constituency Parsing
-- [ ] Lecture 15 : Conference Resolution
-- [ ] Lecture 16 : Dynamic Neural Networks for Question Answering 
-- [ ] Lecture 17 : Possible NLP Architectures
+- [x] Lecture 15 : Conference Resolution
+- [x] Lecture 16 : Dynamic Neural Networks for Question Answering 
+- [x] Lecture 17 : Possible NLP Architectures
 
